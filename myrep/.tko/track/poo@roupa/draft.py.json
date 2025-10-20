@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-20_18-43-23",
+            "content": "@@ -352,14 +352,13 @@\n ente\n-, P\n+ \n P, \n+P\n P, M\n@@ -518,16 +518,16 @@\n t(%22$\n-%22\n  + line\n+%22\n ) %0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-20_18-47-12",
+            "content": "@@ -742,12 +742,8 @@\n size\n-: ()\n %22:%0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-20_18-55-54",
+            "content": "@@ -738,16 +738,20 @@\n == %22size\n+: ()\n %22:%0A     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-20_18-56-04",
+            "content": "@@ -126,11 +126,8 @@\n urn \n-%22(%7B\n self\n@@ -140,11 +140,8 @@\n anho\n-%7D)%22\n %0A%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-20_19-06-10",
+            "content": "@@ -122,16 +122,17 @@\n  return \n+%22\n (%7Bself._\n@@ -141,16 +141,17 @@\n amanho%7D)\n+%22\n %0A%0A      \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-20_19-06-32",
+            "content": "@@ -122,16 +122,18 @@\n  return \n+(%7B\n self.__t\n@@ -138,16 +138,18 @@\n _tamanho\n+%7D)\n %0A%0A      \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-20_19-06-48",
+            "content": "@@ -379,169 +379,8 @@\n %22)%0A%0A\n-        def __str__(self):%0A            if self.__tamanho == %22%22:%0A             return %22size: ()%22%0A            else:%0A             return f%22size: (%7Bself.__tamanho%7D)%22%0A\n %0Adef\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-20_19-40-54",
+            "content": "@@ -348,16 +348,17 @@\n o, tente\n+,\n  PP, P, \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-20_19-41-35",
+            "content": "@@ -447,27 +447,24 @@\n             \n-   \n return %22size\n@@ -487,19 +487,16 @@\n   else:%0A\n-   \n         \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-20_19-54-46",
+            "content": "@@ -377,79 +377,8 @@\n G%22)%0A\n-            else: %0A                 self.__tamanho = numeracao%0A        \n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-20_19-59-15",
+            "content": "class Roupa: \n        def __init__(self):\n            self.__tamanho: str = \"\"\n\n        def getTamanho(self):\n            return self.__tamanho\n\n        def setTamanho(self, numeracao):\n            tamanhos_validos = [\"P\", \"PP\", \"M\", \"G\", \"GG\", \"XG\"]    \n            if numeracao not in tamanhos_validos:\n                print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n            else: \n                 self.__tamanho = numeracao\n        \n        def __str__(self):\n            if self.__tamanho == \"\":\n                return \"size: ()\"\n            else:\n                return f\"size: ({self.__tamanho})\"\n\ndef main():\n             roupa = Roupa()\n            \n             while True: \n                line = input()    \n                print(\"$\" + line) \n                args = line.split(\" \")\n\n                if args[0] == \"end\":\n                     break \n                if args[0] == \"show\":\n                     print(roupa)\n                if args[0] == \"size\":\n                     numeracao = args[1]\n                     roupa.setTamanho(numeracao)\nmain()                     \n",
+            "lines": "36"
+        }
+    ]
+}
