@@ -161,3 +161,8 @@
 2025-10-28 01:43:06, EXEC, v:1, k:poo@motouber, mode:FULL, rate:100
 2025-10-28 01:43:19, MOVE, v:1, k:poo@motouber, mode:BACK
 2025-10-28 01:45:04, SELF, v:1, k:poo@motouber, rate:100, human:sim, iagen:sim, guide:sim, alone:6, study:120
+2025-10-28 01:54:13, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-28 01:55:17, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100, size:107
+2025-10-28 01:55:35, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100
+2025-10-28 01:55:38, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-28 01:56:13, SELF, v:1, k:poo@motoca, rate:100, human:sim, iagen:sim, guide:sim, alone:8, study:180
