@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-28_00-50-22",
+            "content": "class Pessoa: \n   def _init_(self, nome: str = \"\", idade: int = 0): \n         self.__nome: str = nome\n         self.__idade: int = idade\n    \n    def get_nome(self) -> str: \n        return self.__nome \n\n    def get_idade(self) -> int: \n        return self.__idade \n   \n    def _str_(self)-> str:\n        return f\"{self._nome}:{self._idade}\"\n\nclass Moto: \n    def _init_(self):\n        self.__power:int = 1\n        self.__time:int = 0 \n        self.__person: Cliente | None = None \n\n    def getPower(self)->int: \n        return self.__power\n\n    def getTime (self)->int: \n        return self.__time \n\n    def getPerson(self)-> Cliente | None:\n        return self.__person\n\n    def inserir ( self,person:Cliente)->bool:\n        if self.__person != None:\n            print(\"fail: busy motorcycle\")\n            return false\n        else:\n            self.__person = person\n            return True\n\n    def remover (self, Cliente= None):\n        if self.__person is None:\n            print (\"fail: empty motorcycle\")\n            return None\n        aux: Cliente= self.__person  \n        self.__person= None\n        print(aux)\n\n    def drive (self, time: int):\n        if self.__time ==0:\n            print(\"fail: buy time first\")\n            return\n        if self.__person is None: \n            print(\"fail: empty motorcycle\")\n            return\n        if self.__person.get_idade()>10:\n            print(\"fail: too\")\n",
+            "lines": "54"
+        }
+    ]
+}
