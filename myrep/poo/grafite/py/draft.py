@@ -106,4 +106,5 @@ def main():
         elif args [0]=="write":
             lapiseira.writePage()
         
-main()
+main() 
+
